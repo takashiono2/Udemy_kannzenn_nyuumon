@@ -3,12 +3,12 @@
 
 import Bye from "./components/Bye"
 import Hello from "./components/Hello"
-
+const name = "Tom";
 const Example = () => {
   return (
     <>
-      <Hello />
-      <Bye />
+      <Hello name={name}/>
+      <Bye name={name}/>
     </>
   );
 };
