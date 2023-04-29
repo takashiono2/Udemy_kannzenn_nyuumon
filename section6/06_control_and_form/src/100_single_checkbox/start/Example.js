@@ -2,26 +2,26 @@ import { useState } from "react";
 
 const Example = () => {
   const [isChecked, setIsChecked] = useState(true);
-  const toggleChecked = (e) => {
-    setIsChecked(preState => !preState);
-    // setIsChecked((preState)=>{
-    // let state = !preState;
-    // state;
-  };
-
+  const toggleChecked = () =>{
+    setIsChecked(prevState =>!prevState
+    // setIsChecked((prevState)=>{
+    //   let state = !prevState;
+    //   return state;
+    );
+  }
   return(
     <>
       <label htmlFor="my-check">
         チェック：
-      <input type="checkbox"
+      <input
+        type="checkbox"
         id="my-check"
-        checked={isChecked}
         onChange={toggleChecked}
+        checked={isChecked}
       />
       </label>
-      <div>
-        { isChecked? "ON!" : "OFF!" }
-      </div>
+      {/* <div>{ isChecked ? "OK!" : "NG!" }</div> */}
+      <div style={{ visibility: isChecked ? "visible" : "hidden" }}>OK</div>
     </>
   )
 };
