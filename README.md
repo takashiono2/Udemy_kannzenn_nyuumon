@@ -93,6 +93,24 @@
 </details>
 
 <details>
+<summary>section8 ReactでDOM操作を行う方法</summary>
+
+| NO | 内容 |
+| ---- | ---- |
+| 83. | セクション紹介 |
+| 84. | 【createPoratal】モーダルの作り方 |
+| 85. | 【Bubbling】Portalを使う時の注意点! |
+| 86. | 【練習&解答】createPortalでトーストを作成してみよう |
+| 87. | 【useRef】refでDOMを直接操作してみよう |
+| 88. | 【useRef】refで動画プレイヤーを作成してみよう  |
+| 89. | refとは？refとstateの違い |
+| 90. | 【forwardRef】他のコンポーネントのDOMにアクセスする方法　|
+| 91. | 【uselmperateiveHandle】refへのアクセスを限定する方法　|
+| 92. | 【練習＆解答】refの使い方 |
+| 93. | セクションまとめ　|
+</details>
+
+<details>
 <summary>section17 Next.js(part1)基本的な使い方</summary>
 
 | NO | 内容 |

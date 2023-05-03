@@ -1,16 +1,17 @@
 // POINT 複数ページでの状態の共有（Context使用）
+//Listを使う、routerを使う
 import { useState } from "react";
 import Form from "../../components/form";
 import List from "../../components/list";
-import { useAppContext } from "../../context/AppContext";
-import { useRouter } from "next/router";
+//追記
+//追記
 import Link from "next/link";
 
 export default function PageLink() {
   const initialState = { name: "", birth: "" };
   const [value, setValue] = useState(initialState);
   const [ list, setList ] = useAppContext();
-  const router = useRouter();
+//追記
 
   const handleChange = (e) => {
     const inputId = e.target.id;
@@ -24,6 +25,7 @@ export default function PageLink() {
   const handleResetClick = () => {
     setList([]);
   };
+  //onClick関数でクリックしたら'/09_multipage_state/list'へ「リストページへ」を追記
   return (
     <div>
       <Form
@@ -33,11 +35,10 @@ export default function PageLink() {
         nameValue={value.name}
         birthValue={value.birth}
       />
-      <List list={list} />
-      <button onClick={() => router.push('/09_multipage_state/list')}>
-        リストページへ
-      </button>
-      <Link href='/09_multipage_state/list'>
+
+
+
+
       <a >
         アンカータグ
       </a>

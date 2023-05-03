@@ -1,11 +1,12 @@
 import '../styles/globals.css'
-import { AppProvider } from "../context/AppContext";
-
+//next.jsは実装ではじめに通るところなので、AppProviderを取り込む
+//ここ
+//AppProviderでラップしてあげる事で、全ページに渡せるようになる
 function MyApp({ Component, pageProps }) {
   return (
-    <AppProvider>
+
       <Component {...pageProps} />
-    </AppProvider>
+
   );
 }
 export default MyApp;

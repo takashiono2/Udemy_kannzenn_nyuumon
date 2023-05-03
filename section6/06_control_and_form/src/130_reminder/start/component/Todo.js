@@ -1,4 +1,4 @@
-//todos,setTodos,deleteTodo,newTodos
+//todos,setTodos,deleteTodo,newTodos,createTodo
 import { useState } from "react";
 import Form from "./Form";
 import List from "./List";
@@ -20,16 +20,21 @@ const Todo = () => {
   ];
   const [todos,setTodos] = useState(todosList);
 
-  const deleteTodo=()=>{
-    todosList.filter(()=>{
-
+  const deleteTodo=(id)=>{
+    const newTodos = todos.filter((todo)=>{
+      return todo.id !== id;
     })
+    setTodos(newTodos);
+  }
+
+  const createTodo=(todo)=>{
+    setTodos([...todos,todo]);
   }
 
   return (
   <>
-    <Form />
     <List todos={todos} deleteTodo={deleteTodo}/>
+    <Form createTodo={createTodo}/>
   </>
 )
 
