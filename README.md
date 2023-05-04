@@ -111,6 +111,17 @@
 </details>
 
 <details>
+<summary>section16 RestAPIを使ったサーバーとの通信</summary>
+
+| NO | 内容 |
+| ---- | ---- |
+| 168. | セクション紹介 |
+| 169. | REST APIとは？ |
+<!-- | 170. |  |
+|   |-->
+</details>
+
+<details>
 <summary>section17 Next.js(part1)基本的な使い方</summary>
 
 | NO | 内容 |
