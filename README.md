@@ -120,15 +120,15 @@
 | 112. | useReducerとuseStateの違い |
 | 113. | useReducerとuseStateの違い（関数型プログラミング視点） |
 | 114. | 【練習&解答】useReducer |
-<!-- | 115. | useContextでグローバルな値を管理しよう |
+| 115. | useContextでグローバルな値を管理しよう |
 | 116. | useContextでstateを管理しよう |
 | 117. | useContextのリファクタリングをしてみよう |
-| 118. | |
-| 119. |  |
-| 120. |　|
-| 121. |　|
-| 122. |　|
-| 123. |　| -->
+<!-- | 118. | useContextを使う際の注意点！ |
+| 119. | useContextとuseReducerを組み合わせて作ってみよう |
+| 120. | 【練習＆解答】useContextとuseReducer |
+| 121. | 【練習】useContextとuseReducer|
+| 122. | 【解答】useContextとuseReducer|
+| 123. | 【解答続き】useContextとuseReducer| -->
 </details>
 
 <details>
