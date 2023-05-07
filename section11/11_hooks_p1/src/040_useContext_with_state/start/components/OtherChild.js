@@ -1,13 +1,12 @@
-//useContext, MyContext
-import { useContext } from "react"
-import { MyContext } from "../Example"
+//useContext, MyContext,clickHandler,value,setValue
+import { MyContext } from "../Example";
+import { useContext } from "react";
 
 const OtherChild = () => {
-  const [, setState ] = useContext(MyContext);
-
-  const clickHandler = (e) => {
-    setState(prev=>prev+1);
-  };
+  const [,setValue] = useContext(MyContext)
+  const clickHandler = (e) =>{
+    setValue(prev=> ++ prev);
+  }
 
   return (
     <div style={{ border: "1px solid black" }}>

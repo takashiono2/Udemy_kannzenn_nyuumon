@@ -1,16 +1,17 @@
+//ThemeContext,value,context/ThemeContext
 import "./Example.css";
-import Main from "./components/Main";
 import Header from "./components/Header";
-import Footer from "../../060_context_file_render/start/components/Footer";
+import Main from "./components/Header";
 import { ThemeProvider } from "./context/ThemeContext";
 
 const Example = () => {
   return (
-    <ThemeProvider>
-      <Header />
-      <Main />
-      <Footer />
-    </ThemeProvider>
+    <>
+      <ThemeProvider>
+        <Header />
+        <Main />
+      </ThemeProvider>
+    </>
   );
 };
 

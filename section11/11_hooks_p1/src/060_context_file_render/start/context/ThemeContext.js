@@ -1,3 +1,5 @@
+//useState, useContext, createContext,ThemeContext,ThemeUpdateContext,createContext
+//theme, setTheme,useState,value,useTheme,useThemeUpdate
 import { useState, useContext, createContext } from "react";
 
 export const ThemeContext = createContext();
@@ -5,7 +7,7 @@ export const ThemeUpdateContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
 
-  const [theme, setTheme] = useState("light");
+  const [ theme, setTheme ] = useState("light");
 
   return (
     <ThemeContext.Provider value={theme}>
@@ -13,8 +15,8 @@ export const ThemeProvider = ({ children }) => {
         {children}
       </ThemeUpdateContext.Provider>
     </ThemeContext.Provider>
-  )
+  );
 };
 
 export const useTheme = () => useContext(ThemeContext);
-export const useUpdateTheme = () => useContext(ThemeUpdateContext);
+export const useThemeUpdate = ()=> useContext(ThemeUpdateContext);
