@@ -1,4 +1,6 @@
-import { createContext,useReducer,useContext } from "react";
+// createContext,useReducer,useContext,CounterContext,CounterDispatchContext,
+// children,value,
+import { createContext, useReducer, useContext } from "react";
 
 const CounterContext = createContext();
 const CounterDispatchContext = createContext();
@@ -24,12 +26,12 @@ const CounterProvider = ({children})=> {
           )
 }
 
-const useCounter = () => {
+const useCounter =()=> {
   return useContext(CounterContext);
 }
-const useCounterDispatch = () => {
+const useCounterDispatch = () =>{
   return useContext(CounterDispatchContext);
 }
 
-export { CounterProvider,useCounter, useCounterDispatch}
+export { CounterProvider,useCounter,useCounterDispatch }
 
