@@ -127,8 +127,8 @@
 | 119. | useContextとuseReducerを組み合わせて作ってみよう |
 | 120. | 【練習＆解答】useContextとuseReducer |
 | 121. | 【練習】useContextとuseReducer|
-<!-- | 122. | 【解答】useContextとuseReducer|
-| 123. | 【解答続き】useContextとuseReducer| -->
+| 122. | 【解答】useContextとuseReducer|
+| 123. | 【解答続き】useContextとuseReducer|
 </details>
 
 <details>
