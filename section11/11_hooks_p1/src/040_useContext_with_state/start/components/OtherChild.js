@@ -1,11 +1,11 @@
 //useContext, MyContext,clickHandler,value,setValue
-import { MyContext } from "../Example";
 import { useContext } from "react";
+import { MyContext } from "../Example";
 
 const OtherChild = () => {
-  const [,setValue] = useContext(MyContext)
+  const [,setValue ] = useContext(MyContext);
   const clickHandler = (e) =>{
-    setValue(prev=> ++ prev);
+    setValue(prev=>++prev);
   }
 
   return (

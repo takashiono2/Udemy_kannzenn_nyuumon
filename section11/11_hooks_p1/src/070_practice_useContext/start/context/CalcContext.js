@@ -1,7 +1,8 @@
-import { createContext, useReducer, useContext } from "react";
-
-export const CalcContext = createContext();
-export const CalcDispatchContext = createContext();
+//createContext, useReducer, useContext,state, dispatch,reducer, initState
+//throw new Error("operator is invalid");
+import {createContext, useReducer, useContext} from "react";
+const CalcContext = createContext();
+const CalcDispatchContext = createContext();
 
 const reducer = (state, { type, payload }) => {
   switch (type) {
@@ -10,21 +11,29 @@ const reducer = (state, { type, payload }) => {
       return { ...state, [name]: value };
     }
     case "add": {
-      return { ...state, result: parseInt(state.a) + parseInt(state.b) };
+      return {
+        ...state,result: parseInt(state.a) + parseInt(state.b)
+      };
     }
-    case "minus": {
-      return { ...state, result: state.a - state.b };
+    case "minus":{
+      return {
+        ...state,result: state.a - state.b
+      };
     }
-    case "divide": {
-      return { ...state, result: state.a / state.b };
+    case "divide":{
+      return {
+        ...state,result: state.a / state.b
+      };
     }
-    case "multiply": {
-      return { ...state, result: state.a * state.b };
+    case "multiply":{
+      return {
+        ...state,result: state.a * state.b
+      };
     }
     default:
       throw new Error("operator is invalid");
-  }
-};
+  };
+}
 
 export const CalcProvider = ({ children }) => {
   const initState = {
@@ -33,14 +42,16 @@ export const CalcProvider = ({ children }) => {
     result: 3,
   };
 
-  const [state, dispatch] = useReducer(reducer, initState);
+  const [state,dispatch] = useReducer(reducer, initState)
+
 
   return (
     <CalcContext.Provider value={state}>
       <CalcDispatchContext.Provider value={dispatch}>
-        {children}
+      {children}
       </CalcDispatchContext.Provider>
     </CalcContext.Provider>
+
   );
 };
 

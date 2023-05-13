@@ -1,5 +1,6 @@
 //useState, useContext, createContext,ThemeContext,ThemeUpdateContext,createContext
-//theme, setTheme,useState,value,useTheme,useThemeUpdate
+//theme, setTheme,useState,value,useTheme,useUpdateTheme、
+//ThemeContext.Provider value={theme},ThemeUpdateContext.Provider value={setTheme}
 import { useState, useContext, createContext } from "react";
 
 export const ThemeContext = createContext();
@@ -19,4 +20,4 @@ export const ThemeProvider = ({ children }) => {
 };
 
 export const useTheme = () => useContext(ThemeContext);
-export const useThemeUpdate = ()=> useContext(ThemeUpdateContext);
+export const useUpdateTheme= () => useContext(ThemeUpdateContext);

@@ -1,6 +1,6 @@
 //useContext ,Mycontext ,value
-import { Mycontext } from "../Example";
 import { useContext } from "react";
+import { Mycontext } from "../Example";
 
 const GrandChild = () => {
 

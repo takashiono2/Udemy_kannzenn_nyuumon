@@ -5,9 +5,9 @@ import OtherChild from "./components/OtherChild";
 
 export const MyContext = createContext();
 const Example = () => {
-  const [ state, setState ] = useState(0);
+  const [state, setState] = useState(0);
   return (
-    <MyContext.Provider value={[ state, setState ] }>
+    <MyContext.Provider value={[state, setState]}>
       <Child />
       <OtherChild />
     </MyContext.Provider>

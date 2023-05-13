@@ -5,10 +5,10 @@ const Counter = () => {
     return (
         <>
             <CounterResult/>
-            <CounterButton step={2} calcType="+" />
-            <CounterButton step={2} calcType="-" />
-            <CounterButton step={10} calcType="+" />
-            <CounterButton step={10} calcType="-" />
+            <CounterButton calcType="+" step={2}/>
+            <CounterButton calcType="-" step={2}/>
+            <CounterButton calcType="+" step={10}/>
+            <CounterButton calcType="-" step={10}/>
         </>
     )
 }

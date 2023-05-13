@@ -1,9 +1,11 @@
 //useUpdateTheme,setTheme, useUpdateTheme
-
-import { useThemeUpdate } from "../context/ThemeContext"
+import { useUpdateTheme } from "../context/ThemeContext";
 
 const Footer = () => {
-  const setTheme = useThemeUpdate; //eslint-disable-line
+
+const setTheme = useUpdateTheme(); // eslint-disable-line
+console.log("footer");
+
   return (
     <footer>
       <div>フッター</div>

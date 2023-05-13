@@ -1,29 +1,24 @@
 //useReducer,state, { type, payload },case "change",{ name, value },payload,initState
-//throw new Error('不明なタイプです'),calculate,numChangeHandler,name="a",name="b",key={type} value={type}
+//throw new Error('不明なタイプです'),calculate,numChangeHandler,name="a",name="b",
+//key={type} value={type}
 import { useReducer } from "react";
 
 const CALC_OPTIONS = ["add", "minus", "divide", "multiply"];
 
-const reducer = (state,{type, payload}) => {
+const reducer = ( state, { type, payload } ) => {
   switch(type){
-    case 'change':{
-        const { name, value } = payload;
-        return {...state, [name]: value}
-    }
-    case 'add':{
-      return {...state, result: state.a + state.b} ;
-    }
-    case 'minus':{
-      return {...state, result: state.a - state.b} ;
-    }
-    case 'divide':{
-      return {...state, result: state.a / state.b} ;
-    }
-    case 'multiply':{
-      return {...state, result: state.a * state.b} ;
-    }
-    default:
-      throw new Error('不明なタイプです');
+    case "change":
+      return {...state,[payload.name]: payload.value};
+    case "add":
+      return {...state, result: state.a + state.b};
+    case "minus":
+      return {...state, result: state.a - state.b};
+    case "divide":
+      return {...state, result: state.a / state.b};
+    case "multiply":
+      return {...state, result: state.a * state.b};
+    default :
+      throw new Error('不明なタイプです')
   }
 };
 
@@ -34,14 +29,27 @@ const Example = () => {
     result: 3,
   };
 
-  const [state, dispatch] = useReducer(reducer, initState);
+  const [ state, dispatch ] = useReducer(reducer,initState);
 
   const calculate = (e) => {
-    dispatch({type: e.target.value});
+    dispatch(
+      {
+        type: e.target.value,
+      }
+    );
   };
 
   const numChangeHandler = (e) => {
-    dispatch({type: 'change' ,payload: {name: e.target.name ,value: parseInt(e.target.value)}})
+    dispatch(
+      {
+        type: 'change',
+        payload:
+        {
+          name: e.target.name,
+          value: parseInt(e.target.value)
+        }
+      }
+    );
   };
 
   return (
@@ -64,14 +72,14 @@ const Example = () => {
           onChange={numChangeHandler}
         />
       </div>
-          <select value={state.type} name="type" onChange={calculate}>
-            {CALC_OPTIONS.map((type)=>{
-              return(
-                <option key={type} value={type} >{type}</option>
-              );
-            })};
-          </select>
-          <h3>結果：{state.result} </h3>
+      <select value={state.type} onChange={calculate}>
+      {CALC_OPTIONS.map((type) => {
+          return (
+                <option key={type} value={type}>{type}</option>
+          )
+        })}
+      </select>
+      <h3>結果: {state.result}</h3>
     </>
   );
 };

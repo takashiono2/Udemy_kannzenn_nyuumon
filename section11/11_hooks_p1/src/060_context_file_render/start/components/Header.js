@@ -1,10 +1,10 @@
 // useTheme,useUpdateTheme,theme,setTheme
-
-import { useTheme, useThemeUpdate } from "../context/ThemeContext"
+import { useTheme ,useUpdateTheme } from "../context/ThemeContext";
 
 const Header = () => {
+
   const theme = useTheme();
-  const setTheme = useThemeUpdate();
+  const setTheme = useUpdateTheme();
 
   const THEMES = ["light", "dark", "red"];
 
