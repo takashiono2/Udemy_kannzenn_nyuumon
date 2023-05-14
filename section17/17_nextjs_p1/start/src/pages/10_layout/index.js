@@ -1,5 +1,3 @@
-// POINT ページ全体に関わる設定の変更方法
-
 import Link from "next/link";
 
 export default function Page() {

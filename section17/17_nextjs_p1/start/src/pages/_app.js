@@ -1,12 +1,13 @@
 import '../styles/globals.css'
-//next.jsは実装ではじめに通るところなので、AppProviderを取り込む
-//ここ
-//AppProviderでラップしてあげる事で、全ページに渡せるようになる
+import { AppProvider } from "../context/AppContext";
+import Layout1 from "../components/layout/layout1";
+
 function MyApp({ Component, pageProps }) {
+  const getLayout = Component.getLayout ?? ((page) => <Layout1>{page}</Layout1>)
   return (
-
-      <Component {...pageProps} />
-
+    <AppProvider>
+      {getLayout(<Component {...pageProps} />)}
+    </AppProvider>
   );
 }
 export default MyApp;
