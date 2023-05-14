@@ -168,7 +168,7 @@
 | 192. | セクションまとめ |
 </details>
 
-<!-- <details>
+<details>
 <summary>section18 Next.js(part2)レンダリング</summary>
 
 | NO | 内容 |
@@ -179,12 +179,16 @@
 | 196. |【SSR】挙動について理解しよう【Part.1】|
 | 197. |【SSR】挙動について理解しよう【Part.2】|
 | 198. |【SSR】getStaticProps関数について学ぼう |
-| 199. |【SG】getStaticPaths関数について学ぼう  |
-| 200. |【SG】  |
-| 201. |【SG】  |
-| 202. |【SG】  |
-| 203. |【SG】  |
-| 204. |【SG】  |
-| 205. |【SSR】  | -->
+| 199. |【SG】ソースコードからHTMLを作成してみよう |
+<!-- | 200. |【SG】エクスポートする際の注意点 |
+| 201. |【SG】getStaticProps関数について学ぼう |
+| 202. |【SG】getStaticPaths関数について学ぼう |
+| 203. |【SG】fallbackプロパティの挙動を理解しよう |
+| 204. |【SG】ISRを使ってみよう |
+| 205. |【SSR】 |
+| 206. |【SSR】 |
+| 207. |【SSR】 |
+| 208. |【SSR】 |
+| 209. |【SSR】 | -->
 </details>
 
