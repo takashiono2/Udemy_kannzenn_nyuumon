@@ -185,9 +185,9 @@
 | 202. |【SG】getStaticPaths関数について学ぼう |
 | 203. |【SG】fallbackプロパティの挙動を理解しよう |
 | 204. |【おまけ】ISRを使ってみよう |
-<!-- | 205. |【SG】APIサーバーのデータを使って静的ビルド！【Part.1】 |
+| 205. |【SG】APIサーバーのデータを使って静的ビルド！【Part.1】 |
 | 206. |【SG】APIサーバーのデータを使って静的ビルド！【Part.2】 |
-| 207. |【API Routes】Next.jsでAPIを作成しよう |
+<!-- | 207. |【API Routes】Next.jsでAPIを作成しよう |
 | 208. |【API Routes】Next.jsで動的APIを作成しよう |
 | 209. | 環境変数を切り替える方法 | -->
 </details>
