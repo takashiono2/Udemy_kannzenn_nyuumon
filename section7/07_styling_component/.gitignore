@@ -25,4 +25,4 @@ yarn-error.log*
 *.png
 *.ico
 
-./*/end
+./src/*/end
