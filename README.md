@@ -102,13 +102,13 @@
 | 73. | インラインスタイルの注意点！ |
 | 74. | 外部CSSのimportantを使ったスタイリング|
 | 75. | CSS Modulesを使ったスタイリング|
-<!-- | 76. | 【styled-components】CSS-in-JSを使ったスタイリング |
+| 76. | 【styled-components】CSS-in-JSを使ったスタイリング |
 | 77. | 【styled-components】【発展】CSS-in-JSを使ったスタイリング |
-| 78. | |
-| 79. | |
-| 80. | |
-| 81. | 　|
-| 82. | 　| -->
+<!-- | 78. | 【練習＆解答】styled-components|
+| 79. | 【まとめ】ReactでCSSフレームワーク|
+| 80. | 【付録】ReactでCSSフレームワーク 【Part.1】|
+| 81. | 【付録】ChakuraUIを使ってみよう【Part.2】|
+| 82. | 【付録】ChakuraUIを使ってみよう【Part.3】|  -->
 </details>
 
 <details>
