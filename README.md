@@ -151,6 +151,28 @@
 </details>
 
 <details>
+<summary>section13【発展】 ReduxとRedux Toolkit</summary>
+
+| NO | 内容 |
+| ---- | ---- |
+| 135. | セクション紹介 |
+| 136. | |
+| 137. | |
+| 138. | |
+| 139. | |
+| 140. | |
+| 141. | |
+| 142. | Redux ToolkitでReduxを書き換えてみよう |
+| 143. | |
+| 144. | |
+| 145. | |
+| 146. | |
+| 147. | |
+| 148. | |
+| 149. | |
+</details>
+
+<details>
 <summary>section16 RestAPIを使ったサーバーとの通信</summary>
 
 | NO | 内容 |
