@@ -168,8 +168,8 @@
 | 145. | Redux Thunkとは？Redux Middlewareとの関係 |
 | 146. | Redux Thunkで非同期処理を記述してみよう |
 | 147. | 非同期処理のステータスを画面に表示してみよう |
-<!-- | 148. | |
-| 149. | | -->
+| 148. | Redux Middlewareを作成してみよう | |
+| 149. | セクションまとめ |
 </details>
 
 <details>
